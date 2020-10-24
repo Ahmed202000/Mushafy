@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/orders_container"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@drawable/btnn_back"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:tabIndicator="@color/darkorange"
+        android:id="@+id/tab_home"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        app:tabIndicatorHeight="@dimen/_1sdp"
+        app:tabIndicatorFullWidth="false"
+        android:layout_height="?actionBarSize">
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tab_fhrs"
+            android:text="الفهرس"
+            android:textColor="@color/black"/>
+
+
+
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:id="@+id/tab_agzaa"
+            android:layout_height="wrap_content"
+            android:text="الاجزاء"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+</RelativeLayout>

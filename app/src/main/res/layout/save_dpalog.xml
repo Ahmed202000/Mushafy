@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    android:background="@drawable/btnn_back">
+
+
+
+    <TextView
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="هل تريد حفظ علامة عند هذه الصفحة ؟"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_save"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/araby"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="بالتاكيد"
+        android:layout_below="@id/tv_save"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_sure"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/araby"
+        android:textColor="@color/lowDarkfont"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لا"
+        android:layout_below="@id/tv_save"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tv_no"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/araby"
+        android:textColor="@color/lowDarkfont"/>
+
+</RelativeLayout>
