@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FullscreenActivity">
+
+
+
+
+        <activity android:name="com.hegazy.mushafy.SurahsListenActivity"/>
+        <activity android:name="com.hegazy.mushafy.AuthorsActivity"/>
+        <activity android:name="com.hegazy.mushafy.FullscreenActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,19 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-
         </activity>
 
-
-        <activity android:name=".SurahsListenActivity" />
-        <activity android:name=".AuthorsActivity" />
-
-        <activity android:name=".SplashActivity"></activity>
-
-
-        <activity android:name=".QuranActivity" />
-        <activity android:name=".PlayerActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.hegazy.mushafy.SplashActivity"/>
+        <activity android:name="com.hegazy.mushafy.QuranActivity" />
+        <activity android:name="com.hegazy.mushafy.PlayerActivity" />
+        <activity android:name="com.hegazy.mushafy.MainActivity"></activity>
     </application>
 
 </manifest>

@@ -55,7 +55,7 @@ public class PlayerActivity extends AppCompatActivity {
 
     @BindView(R.id.rel1)
     RelativeLayout rel1;
-    //    @BindView(R.id.adView)
+//    @BindView(R.id.adView)
 //    AdView adView;
     @BindView(R.id.pprogressBar)
     ProgressBar pprogressBar;
@@ -73,7 +73,7 @@ public class PlayerActivity extends AppCompatActivity {
             author= (AuthorClass) getIntent().getSerializableExtra(AUTHOR);
             surah=(SurahClass) getIntent().getSerializableExtra(SURAH);
             path =  path = "https://server" + author.servername + ".mp3quran.net/" + author.name + "/" + surah.surah_number + ".mp3";
-            playerTvSurahName.setText(author.server +"\n" + surah.surah_name);
+              playerTvSurahName.setText(author.server +"\n" + surah.surah_name);
             player = new Player();
         }
         catch (Exception e)
@@ -158,9 +158,9 @@ public class PlayerActivity extends AppCompatActivity {
                 });
             }
 
-        }
+                }
 
-    }
+            }
 
 
 
@@ -215,14 +215,14 @@ public class PlayerActivity extends AppCompatActivity {
                 break;
             case R.id.btn_rate:
                 Intent ratingIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?" + "id=com.roqua"));
-                startActivity(ratingIntent);
+              startActivity(ratingIntent);
                 break;
             case R.id.player_btnplay:
 
                 if (!mp.isPlaying()) {
                     mp.start();
                     playerBtnplay.setBackgroundResource(R.drawable.img_btn_pause_pressed);
-                    //  notifyData( type , name , path);
+                  //  notifyData( type , name , path);
 
 
                 } else if (mp.isPlaying()) {
@@ -235,8 +235,8 @@ public class PlayerActivity extends AppCompatActivity {
                 break;
 
             case R.id.player_btnforward:
-                mp.seekTo(mp.getCurrentPosition()+5000);
-                break;
+            mp.seekTo(mp.getCurrentPosition()+5000);
+            break;
             case R.id.player_btnbackword:
                 mp.seekTo(mp.getCurrentPosition()-5000);
                 break;
@@ -247,7 +247,7 @@ public class PlayerActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         mp.stop();
-
+   
     }
 
     @Override

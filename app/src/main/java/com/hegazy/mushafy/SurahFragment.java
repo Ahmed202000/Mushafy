@@ -48,8 +48,7 @@ public class SurahFragment extends BaseFragment {
                                                       i.putExtra(PAGE_NUMBER, data.get(position).getSurah_position());
                                                       startActivity(i);
                                                   }
-
-
+//
                                                   //TODO listen
                                                   else if (LoadData(getActivity(), ACTION).equals("listen")) {
                                                       Intent i = new Intent(getActivity(), PlayerActivity.class);

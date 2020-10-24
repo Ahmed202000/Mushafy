@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/logo"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
+    android:layout_height="fill_parent"
+    android:src="@drawable/logo">
 
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/logo"
-        android:id="@+id/image" />
+        android:scaleType="center"
+        android:src="@drawable/logo" />
 
 
-
-
-    <ImageViewm
-        android:visibility="gone"
+    <ImageView
         android:id="@+id/mark"
         android:layout_width="@dimen/_40sdp"
         android:layout_height="@dimen/_40sdp"
-        android:src="@drawable/ic_baseline_bookmark_24"
         android:layout_alignParentEnd="true"
-        android:layout_margin="@dimen/_5sdp" />
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/ic_baseline_bookmark_24"
+        android:visibility="gone" />
 
 
     <ProgressBar
-        android:background="@drawable/btnn_back"
-        android:id="@+id/progressBar"
+        android:id="@+id/image_progress"
         android:layout_width="@dimen/_70sdp"
         android:layout_height="@dimen/_70sdp"
-        android:padding="@dimen/_10sdp"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:background="@drawable/btnn_back"
+        android:padding="@dimen/_10sdp" />
 
 
 </RelativeLayout>

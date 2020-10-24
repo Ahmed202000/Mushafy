@@ -41,12 +41,12 @@ public class SplashActivity extends AppCompatActivity {
 
                 break;
             case R.id.btn_listen:
-                //   Toast.makeText(this, "bhjb", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "bhjb", Toast.LENGTH_SHORT).show();
                 SaveData(this,ACTION ,"listen");
                 startActivity(new Intent(SplashActivity.this , AuthorsActivity.class));
                 break;
             case R.id.btn_label:
-                //    Toast.makeText(this, LoadData(SplashActivity.this , SAVED), Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(this, LoadData(SplashActivity.this , SAVED), Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(SplashActivity.this,QuranActivity.class);
                 if (LoadData(SplashActivity.this , SAVED)!=null)
                 {
@@ -68,4 +68,4 @@ public class SplashActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-}
+    }

@@ -1,7 +1,5 @@
 package com.hegazy.mushafy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,6 +8,9 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class FullscreenActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class FullscreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fullscreen);
 
 
-        MediaPlayer mediaPlayer= MediaPlayer.create(FullscreenActivity.this,R.raw.ss);
+        MediaPlayer mediaPlayer= MediaPlayer.create(FullscreenActivity.this, R.raw.ss);
         mediaPlayer.start();
 
 
@@ -42,7 +43,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
         //كود الافيقت
         ImageView image = findViewById(R.id.image);
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.anim);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.anim);
         image.startAnimation(animation);
     }
 }

@@ -34,9 +34,9 @@ public class AgzaaFragment extends BaseFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //TODO read
-                Intent i = new Intent(getActivity(), QuranActivity.class);
-                i.putExtra(PAGE_NUMBER, data.get(position).getSurah_position());
-                startActivity(i);
+                    Intent i = new Intent(getActivity(), QuranActivity.class);
+                    i.putExtra(PAGE_NUMBER, data.get(position).getSurah_position());
+                    startActivity(i);
 //
 
 

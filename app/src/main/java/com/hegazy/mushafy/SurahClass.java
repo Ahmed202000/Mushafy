@@ -5,8 +5,8 @@ import java.io.Serializable;
 class SurahClass implements Serializable {
     public String surah_name;
     public int surah_position;
-    public String type;
-    public String surah_number;
+     public String type;
+     public String surah_number;
 
     public String getSurah_number() {
         return surah_number;
